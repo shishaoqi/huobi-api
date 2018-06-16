@@ -1,0 +1,19 @@
+{
+    "name": "shishao/huobi-api",
+    "description": "提供了一套全新的API，可以帮用户快速接入火币PRO站及HADAX站的交易系统，实现程序化交易",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shishaoqi",
+            "email": "shishaoqi0928@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "shishao\\": "src/"
+        }
+    }
+}
