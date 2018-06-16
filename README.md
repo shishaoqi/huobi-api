@@ -1,4 +1,4 @@
-# 火币REST API请求库
+# laravel 火币REST API请求库
 ## 用法参考demo.php
 ## lib.php已经定义了一些基本方法, 如果要添加新方法,按照火币文档加入就行 https://github.com/huobiapi/API_Docs/wiki/REST_api_reference
 ```
