@@ -6,7 +6,7 @@
 使用laravel
 
 ```shell
-composer require reliese/laravel
+composer require shishao/huobi-api
 ```
 
 添加huobi.php配置文件到config文件中
