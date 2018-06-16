@@ -12,7 +12,7 @@ composer require shishao/huobi-api
 添加huobi.php配置文件到config文件中
 
 ```
-php artisan vendor:publish --tag=my-huobi
+php artisan vendor:publish --tag=config-huobi
 ```
 
 
