@@ -2,6 +2,7 @@
 
 namespace shishao\huobiApi;
 
+use Illuminate\Support\ServiceProvider;
 use shishao\huobiApi\Huobi\HuobiApi;
 
 class HuobiServiceProvider extends ServiceProvider
