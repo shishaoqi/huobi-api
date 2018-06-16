@@ -44,7 +44,7 @@ class HuobiServiceProvider extends ServiceProvider
     protected function registerModelFactory()
     {
         $this->app->singleton(HuobiApi::class, function ($app) {
-            return new HuobiApi(config('huobi.account_id', 'huobi.access_key', 'huobi.secret_key'));
+            return new HuobiApi(config('huobi.account_id'), config('huobi.access_key'), config('huobi.secret_key'));
         });
     }
 
