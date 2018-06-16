@@ -11,12 +11,13 @@ class HuobiApi {
     private $account_id = '';
     private $access_key = '';
 	private $secret_key = '';
-	private $api = 'api.huobi.pro';
+	private $api = '';
 
 
 	public $api_method = '';
 	public $req_method = '';
-	function __construct($accountId, $accessKey, $secretKey) {
+	function __construct($apiUrl, $accountId, $accessKey, $secretKey) {
+		$this->api = $apiUrl;
 		$this->account_id = $accountId;
 		$this->access_key = $accessKey;
 		$this->secret_key = $secretKey;
@@ -224,7 +225,8 @@ class HuobiApi {
 		return json_decode($return);
 	}
 	// 获取账户余额
-	function get_balance($account_id=$this->account_id) {
+	function get_balance($account_id='') {
+		$account_id = $this->account_id;
 		$this->api_method = "/v1/account/accounts/{$account_id}/balance";
 		$this->req_method = 'GET';
 		$url = $this->create_sign_url();

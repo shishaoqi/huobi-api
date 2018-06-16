@@ -25,6 +25,7 @@ return [
         /*define('ACCOUNT_ID', ''); // 你的账户ID
         define('ACCESS_KEY',''); // 你的ACCESS_KEY
         define('SECRET_KEY', ''); // 你的SECRET_KEY*/
+        'api_url' => '',
         'account_id' => '',
         'access_key' => '',
         'secret_key' => '',
