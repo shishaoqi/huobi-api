@@ -28,7 +28,11 @@ class HuobiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton("HuobiApi", function ($app) {
+        $this->app->singleton(HuobiApi::class, function ($app) {
+            return new HuobiApi(config('huobi.api_url'), config('huobi.account_id'), config('huobi.access_key'), config('huobi.secret_key'));
+        });
+
+        $this->app->singleton('HuobiApi', function ($app) {
             return new HuobiApi(config('huobi.api_url'), config('huobi.account_id'), config('huobi.access_key'), config('huobi.secret_key'));
         });
     }

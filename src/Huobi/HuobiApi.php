@@ -21,7 +21,7 @@ class HuobiApi {
 		$this->account_id = $accountId;
 		$this->access_key = $accessKey;
 		$this->secret_key = $secretKey;
-		date_default_timezone_set("Etc/GMT+0");
+		//date_default_timezone_set("Etc/GMT+0");
 	}
 	/**
 	* 行情类API
