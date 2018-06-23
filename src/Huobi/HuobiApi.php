@@ -21,7 +21,6 @@ class HuobiApi {
 		$this->account_id = $accountId;
 		$this->access_key = $accessKey;
 		$this->secret_key = $secretKey;
-		//date_default_timezone_set("Etc/GMT+0");
 	}
 	/**
 	* 行情类API
@@ -356,6 +355,8 @@ class HuobiApi {
 	*/
 	// 生成验签URL
 	function create_sign_url($append_param = []) {
+        date_default_timezone_set("Etc/GMT+0");
+
 		// 验签参数
 		$param = [
 			'AccessKeyId' => $this->access_key,
