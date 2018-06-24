@@ -364,6 +364,7 @@ class HuobiApi {
 			'SignatureVersion' => 2,
 			'Timestamp' => date('Y-m-d\TH:i:s', time())
 		];
+		date_default_timezone_set('Asia/Shanghai');
 		if ($append_param) {
 			foreach($append_param as $k=>$ap) {
 				$param[$k] = $ap; 
